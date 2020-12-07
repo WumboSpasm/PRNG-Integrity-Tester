@@ -1,5 +1,5 @@
 // This program tests the integrity of the Mersenne Twister PRNG by comparing the expected average of summed random numbers to the real average
-// To-do: Get floating-point averages to work as expected
+// To-do: Get floating-point averages to work as expected, maybe add other PRNGs?
 #include <iostream>
 #include <random>
 #include <ctime>
@@ -84,9 +84,7 @@ int main()
 			int randSum{ 0 };
 			
 			for (int seed{ 1 }; seed <= seedNum; ++seed)
-			{
 				randSum += random(minDist, maxDist);
-			}
 			
 			realSum += randSum;
 			
