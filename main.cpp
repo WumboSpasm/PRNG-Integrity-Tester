@@ -106,10 +106,7 @@ int main()
 		
 		// Start again from the beginning of the while loop if 'r' is entered, otherwise break the loop and end the program
 		if (option == 'r')
-		{
 			std::cout << '\n';
-			continue;
-		}
 		else
 			break;
 	}
